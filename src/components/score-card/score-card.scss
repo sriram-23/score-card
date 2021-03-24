@@ -1,0 +1,83 @@
+.score-card-dark,
+.score-card-light {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    animation-name: card-animation;
+    animation-duration: 2s;
+}
+
+.athlete-details {
+    display: flex;
+    align-items: center;
+}
+
+.score-card-dark {
+    background-color: #cccccc;
+}
+
+.score-card-light {
+    background-color: #eeeeee;
+}
+
+.red {
+    background: red;
+}
+
+.orange {
+    background: orangered;
+}
+
+.yellow {
+    background: orange;
+}
+
+.blue {
+    background: steelblue;
+}
+
+.red,
+.orange,
+.yellow,
+.blue {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 30px;
+    color: white;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.avatar {
+    margin: 5px 10px;
+
+    img {
+        border-radius: 50%;
+    }
+}
+
+.score {
+    margin: 0 10px;
+    color: #e46a86;
+}
+
+.first-card {
+    border-radius: 20px 20px 0 0;
+}
+
+.last-card {
+    border-radius: 0 0 20px 20px;
+}
+
+@keyframes card-animation {
+    0% {
+        transform: scaleY(0.75);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
+}
